@@ -128,12 +128,6 @@ CREATE TABLE Email (
     PRIMARY KEY (id_email, endereco_email)
 );
 
-CREATE TABLE Investimentos (
-    FK_pessoa_cpf CHAR,
-    id_beneficio NUMERIC PRIMARY KEY,
-    Valor_Beneficio NUMERIC
-);
-
 CREATE TABLE Filhos (
     FK_pessoa_cpf CHAR,
     Id_Filho NUMERIC PRIMARY KEY
@@ -254,10 +248,6 @@ ALTER TABLE Casa_Proria ADD CONSTRAINT FK_Casa_Proria_3
     REFERENCES Pessoa (CPF);
  
 ALTER TABLE Email ADD CONSTRAINT FK_Email_2
-    FOREIGN KEY (FK_pessoa_cpf???)
-    REFERENCES ??? (???);
- 
-ALTER TABLE Investimentos ADD CONSTRAINT FK_Investimentos_2
     FOREIGN KEY (FK_pessoa_cpf???)
     REFERENCES ??? (???);
  
